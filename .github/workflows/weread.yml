@@ -9,6 +9,8 @@ jobs:
     name: Sync
     runs-on: ubuntu-latest
     env:
+      WEREAD: '${{ secrets.WEREAD_COOKIE }}'
+      WEREAD_COOKIE: ${{ secrets.WEREAD_COOKIE }}
       NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
       NOTION_PAGE: ${{ secrets.NOTION_PAGE }}
       NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
